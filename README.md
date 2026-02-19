@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 A Deep Reinforcement Learning project that implements a \*\*Deep Q-Network (DQN)\*\* for automated stock trading strategy optimization.
@@ -226,3 +227,7 @@ python train\_dqn.py
 
 ⭐ If you found this project useful, feel free to star the repository.
 
+=======
+# DQN-Based-Financial-Trading-Agent
+Developed a Deep Q-Network (DQN) trading agent within a custom Gym environment to learn optimal buy, sell, and hold decisions from historical market data. Compared reinforcement learning performance with ARIMA and LSTM models using a preprocessing pipeline and financial evaluation metrics.
+>>>>>>> e10afc666f3645bed8f1365ff75919632303e70c
