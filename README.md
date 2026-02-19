@@ -1,233 +1,151 @@
-<<<<<<< HEAD
+# 📈 DQN-Based Financial Trading Agent
 
-
-A Deep Reinforcement Learning project that implements a \*\*Deep Q-Network (DQN)\*\* for automated stock trading strategy optimization.
-
-
-
-This project compares Reinforcement Learning approaches with traditional time-series models such as \*\*ARIMA\*\* and \*\*LSTM\*\*.
-
-
+A Deep Reinforcement Learning project that implements a **Deep Q-Network (DQN)** to optimize automated stock trading strategies.
+The project also compares Reinforcement Learning with traditional time-series models such as **ARIMA** and **LSTM** for performance evaluation.
 
 ---
 
+## 🚀 Project Overview
 
+Financial markets are highly dynamic and uncertain. Traditional forecasting models can capture historical patterns but do not actively learn trading decisions.
 
-\## 🚀 Project Overview
+This project builds an intelligent trading agent capable of learning **buy, sell, and hold strategies** directly from market data through interaction with a custom trading environment.
 
+### 🔍 Key Features
 
-
-Financial markets are dynamic and complex. Traditional models like ARIMA and LSTM capture patterns in historical price data, but they do not actively learn trading strategies.
-
-
-
-This project implements:
-
-
-
-\- 📌 Deep Q-Network (DQN) for decision-based trading
-
-\- 📌 LSTM for sequence modeling
-
-\- 📌 ARIMA for statistical forecasting
-
-\- 📌 Data preprocessing pipeline
-
-\- 📌 Evaluation metrics for performance comparison
-
-
-
-The goal is to evaluate how reinforcement learning performs compared to traditional forecasting models.
-
-
+* Deep Q-Network (DQN) for decision-based trading
+* Custom Gym trading environment
+* LSTM model for sequential price prediction
+* ARIMA statistical forecasting baseline
+* Technical indicator engineering (RSI, SMA)
+* Performance evaluation using financial metrics
 
 ---
 
+## 🧠 Technologies Used
 
-
-\## 🧠 Technologies Used
-
-
-
-\- Python 3.10
-
-\- NumPy
-
-\- Pandas
-
-\- Matplotlib
-
-\- Gym / Gymnasium
-
-\- PyTorch / TensorFlow
-
-\- Scikit-learn
-
-
+* Python 3.10
+* NumPy & Pandas
+* Matplotlib
+* Gym / Gymnasium
+* Stable-Baselines3
+* TensorFlow / Keras
+* Statsmodels
+* Scikit-learn
 
 ---
 
-
-
-\## 📂 Project Structure
-
-
+## 📂 Project Structure
 
 ```
-
 DQN-Based-Financial-Trading-Agent/
-
 │
-
-├── preprocessing.py      # Data cleaning and feature engineering
-
-├── train\_dqn.py          # DQN training script
-
-├── train\_lstm.py         # LSTM model training
-
-├── train\_arima.py        # ARIMA baseline model
-
-├── evaluate.py           # Performance evaluation
-
+├── preprocessing.py      # Data cleaning & feature engineering
+├── env.py                # Custom trading environment
+├── train_dqn.py          # DQN training pipeline
+├── train_lstm.py         # LSTM forecasting model
+├── train_arima.py        # ARIMA baseline model
+├── evaluate.py           # Model performance comparison
 ├── requirements.txt
-
 └── README.md
-
 ```
-
-
 
 ---
 
+## ⚙️ Installation & Setup
 
-
-\## ⚙️ Installation \& Setup
-
-
-
-Clone the repository:
-
-
+### 1️⃣ Clone Repository
 
 ```bash
-
 git clone https://github.com/POORVANGIKA/DQN-Based-Financial-Trading-Agent.git
-
 cd DQN-Based-Financial-Trading-Agent
-
 ```
 
-
-
-Create virtual environment:
-
-
+### 2️⃣ Create Virtual Environment
 
 ```bash
-
 python -m venv venv
-
-venv\\Scripts\\activate   # Windows
-
+venv\Scripts\activate
 ```
 
-
-
-Install dependencies:
-
-
+### 3️⃣ Install Dependencies
 
 ```bash
-
 pip install -r requirements.txt
-
 ```
 
+---
 
+## ▶️ Usage
 
-Run training:
-
-
+### Preprocess Data
 
 ```bash
-
-python train\_dqn.py
-
+python preprocessing.py
 ```
 
+### Train DQN Agent
 
+```bash
+python train_dqn.py
+```
 
----
+### Train LSTM Model
 
+```bash
+python train_lstm.py
+```
 
+### Run ARIMA Baseline
 
-\## 📊 Models Implemented
+```bash
+python train_arima.py
+```
 
+### Evaluate Performance
 
-
-\### 1️⃣ Deep Q-Network (DQN)
-
-\- Learns optimal buy/sell/hold policy
-
-\- Uses reward-based learning
-
-\- Suitable for sequential decision problems
-
-
-
-\### 2️⃣ LSTM
-
-\- Captures temporal dependencies
-
-\- Useful for price trend forecasting
-
-
-
-\### 3️⃣ ARIMA
-
-\- Classical statistical time-series forecasting model
-
-
+```bash
+python evaluate.py
+```
 
 ---
 
+## 📊 Models Implemented
 
+### 🔹 Deep Q-Network (DQN)
 
-\## 📌 Future Improvements
+* Learns optimal trading policy (Buy / Sell / Hold)
+* Reward-based sequential decision learning
+* Suitable for adaptive trading environments
 
+### 🔹 LSTM
 
+* Captures temporal dependencies in price movements
+* Effective for trend prediction
 
-\- Add transaction cost modeling
+### 🔹 ARIMA
 
-\- Implement Double DQN
-
-\- Add PPO / A2C comparison
-
-\- Add visualization dashboard
-
-\- Deploy as web application
-
-
-
----
-
-
-
-\## 👩‍💻 Author
-
-
-
-\*\*POORVANGIKA\*\*
-
-
+* Classical statistical time-series forecasting model
+* Serves as a baseline for comparison
 
 ---
 
+## 📌 Future Improvements
+
+* Transaction cost and slippage modeling
+* Double DQN implementation
+* PPO / A2C reinforcement learning comparison
+* Interactive visualization dashboard
+* Web deployment of trading agent
+
+---
+
+## 👩‍💻 Author
+
+**Poorvangika Kanwar**
+
+---
+
+⭐ If you found this project useful, consider giving it a star!
 
 
-⭐ If you found this project useful, feel free to star the repository.
-
-=======
-# DQN-Based-Financial-Trading-Agent
-Developed a Deep Q-Network (DQN) trading agent within a custom Gym environment to learn optimal buy, sell, and hold decisions from historical market data. Compared reinforcement learning performance with ARIMA and LSTM models using a preprocessing pipeline and financial evaluation metrics.
->>>>>>> e10afc666f3645bed8f1365ff75919632303e70c
